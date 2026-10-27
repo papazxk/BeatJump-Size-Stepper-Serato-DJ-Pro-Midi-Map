@@ -8,7 +8,7 @@ Made for the **Pioneer DJ DJM-S11**.
 
 ## What it does
 
-<img width="1280" height="720" alt="720export1_62e02cb0_v1" src="https://github.com/user-attachments/assets/d3be0995-1985-4b1c-962e-99b684adc0ad" />
+<img width="1280" height="720" alt="beatjumpdemo_733f5c35_v1" src="https://github.com/user-attachments/assets/709adf94-0034-4a0c-8638-2282f464ce8e" />
 
 Each deck uses four pads:
 
