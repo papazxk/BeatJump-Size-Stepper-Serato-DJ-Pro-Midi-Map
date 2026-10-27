@@ -1,42 +1,69 @@
-# Beat Jump Size + Jump Pads
+# BeatJump Size-Stepper: Serato DJ Pro MIDI Map for DJM-S11
 
-A Serato DJ Pro MIDI map that lets you change the beat jump size with just two performance pads per deck: one steps the size down, the other steps it up. It also includes forward and backward beat jump pads, so you can change the size and jump from the same pads.
+_by IG: [@papazxk](https://instagram.com/papazxk) / TikTok: [@papazxk](https://tiktok.com/@papazxk)_
 
-Made for the **DJM-S9** and **DJM-S11**.
+Change the beat jump size right from your pads. No mouse. No laptop.
+
+Made for the **Pioneer DJ DJM-S11**.
+
+## What it does
+
+<img width="1280" height="720" alt="720export1_62e02cb0_v1" src="https://github.com/user-attachments/assets/d3be0995-1985-4b1c-962e-99b684adc0ad" />
+
+Each deck uses four pads:
+
+| Pad | Action |
+|-----|--------|
+| Size down | Steps to the next smaller beat jump size |
+| Size up | Steps to the next bigger beat jump size |
+| Jump back | Jumps backward by the current size |
+| Jump forward | Jumps forward by the current size |
+
+You change the size and jump from the same pads.
 
 ## Why this exists
 
-Some controllers, such as the DDJ-REV5, XDJ-RX3 and XDJ-XZ, let you change the beat jump size straight from the hardware, with pad colors that show where you are in the range. The DJM-S9 and DJM-S11 don't have this by default, so changing the jump size means going back to the laptop screen or the mouse.
+Controllers like the XDJ-AZ, XDJ-XZ, XDJ-RX3 and DDJ-REV5 let you change the beat jump size from the hardware. Their pad colors also show where you are in the size range.
 
-This map brings that workflow to the DJM-S9 and DJM-S11. You can switch between a small nudge and a big phrase jump, and do the jump itself, without looking away from your hands or the mixer. The pad colors work the same way as on the controllers that have this built in, so the pads look and behave the way you'd expect.
+The DJM-S11 doesn't have this feature. To change the jump size, you have to use the laptop screen or the mouse.
+
+This MIDI map brings the feature to the DJM-S11. Switch between a small nudge and a big phrase jump without looking away from your hands. The pad colors work like the controllers above.
 
 ## Features
 
-- Step the beat jump size up and down with two pads per deck (Deck 1 and Deck 2)
-- Forward and backward beat jump pads for each deck
-- Pad colors that follow the behavior of controllers with this feature built in:
-  - Pads stay lit while there is room to step further
+- Two pads per deck to step the jump size up and down
+- Two pads per deck to jump forward and backward
+- Works on Deck 1 and Deck 2
+- Pad colors match the controllers that have this feature built in:
+  - Pads stay lit while you can still step further
   - The step-down pad turns off at the smallest size
   - The step-up pad turns off at the largest size
-- Steps through beat jump size slots 0 to 10
 
 ## How it works
 
-Each step pad checks which beat jump size is currently active and selects the next one. At either end of the range, pressing the pad does nothing and the pad's color goes to 0, so you can see you've hit the limit.
+Each step pad checks the active beat jump size and picks the next one.
+
+At the smallest or largest size, the pad does nothing and its color goes to 0. That tells you that you've reached the limit.
 
 ## Installation
 
 1. Download the `.xml` file from this repository.
 2. Copy it into your Serato MIDI mappings folder.
-3. In Serato DJ Pro, select the map in the MIDI settings.
+3. Open Serato DJ Pro and go to the MIDI settings.
+4. Select the map.
 
 ## Customizing
 
-- **MIDI channels and notes:** The pad assignments are set in each `<control>` line (`channel` and `control`). Change them to match your pads.
+To change which pads are used, edit the `channel` and `control` values in each `<control>` line of the `.xml` file. Set them to match your pads.
 
 ## Notes
 
-- Made for two decks (Deck 1 and Deck 2).
-- Tested on DJM-S9 and DJM-S11.
-- This is an unofficial community project and is not affiliated with Serato or AlphaTheta (Pioneer DJ).
+- Works with two decks (Deck 1 and Deck 2).
 - Issues and suggestions are welcome. Open an issue or a pull request.
+
+## Disclaimer
+
+This is an unofficial, community-made project. It is not affiliated with or endorsed by AlphaTheta / Pioneer DJ or Serato. Use at your own risk.
+
+
+
